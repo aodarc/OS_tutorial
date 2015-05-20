@@ -1,2 +1,2 @@
-# there will be my laboratory work with operating systems
+# sun_tix
 Hello GitHub, I`m starded
