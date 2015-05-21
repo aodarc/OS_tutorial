@@ -3,7 +3,6 @@ __author__ = 'Alexander'
 
 from threading import Thread
 
-
 class List:
     def __init__(self):
         self.list = []
@@ -25,7 +24,6 @@ class List:
 
     def __iter__(self):
         return self.list.__iter__()
-
 
 def clean(list):
     i = list.size()
@@ -50,13 +48,12 @@ def cipher(list):
         list.push_front(string)
         i -= 1
 
-
-
 if __name__ == "__main__":
     l = List()
     l.push_back('This string is not empty')
     l.push_front('I have magic number: 21')
-    l.push_back('bla-bla-bla, i like number 21. Whats time? 15:31')
+    l.push_back('\nbla-bla-bla, i like number 21. Whats time? 15:31')
+    l.push_front('7 5 8 54 3 1')
 
     t1 = Thread(target=clean, args=(l,))
     t2 = Thread(target=cipher, args=(l,))
