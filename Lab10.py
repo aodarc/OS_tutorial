@@ -25,6 +25,7 @@ def f1(q, sem):
     print len(q)
     for x in q:
         print x
+    sem.release()
 
 
 if __name__ == "__main__":
